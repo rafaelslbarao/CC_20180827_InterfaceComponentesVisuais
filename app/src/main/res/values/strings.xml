@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Interface e Componentes Visuais</string>
+    <string name="teste">"Default"</string>
+    <string name="HelloWorld">Hello World</string>
+    <string name="OK">OK</string>
+    <string name="Codigo">Código</string>
+    <string name="Nome">Nome da Universidade</string>
+    <string name="Cidade">Cidade</string>
+    <string name="DataInauguracao">Data de Inauguração</string>
+    <string name="Atualizar">Atualizar</string>
+    <string name="Adicionar">Adicionar</string>
+
+    <string-array name="estado">
+        <item name="Estado">Estado</item>
+        <item name="SP">SP</item>
+        <item name="MG">MG</item>
+    </string-array>
 </resources>
