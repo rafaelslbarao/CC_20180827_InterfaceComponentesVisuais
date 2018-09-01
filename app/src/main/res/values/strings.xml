@@ -9,10 +9,43 @@
     <string name="DataInauguracao">Data de Inauguração</string>
     <string name="Atualizar">Atualizar</string>
     <string name="Adicionar">Adicionar</string>
+    <string name="Remover">Remover</string>
+    <string name="InformeCodigo">Informe o código</string>
+    <string name="InformeNome">Informe o nome</string>
+    <string name="InformeCidade">Informe a cidade</string>
+    <string name="InformeEstado">Infome o Estado</string>
+    <string name="CodigoExistente">Código já existe</string>
+    <string name="DataInvalida">Data inválida</string>
+    <string name="InformeData">Informe a Data</string>
 
     <string-array name="estado">
-        <item name="Estado">Estado</item>
-        <item name="SP">SP</item>
-        <item name="MG">MG</item>
+        <item>Estado</item>
+        <item>AC</item>
+        <item>AL</item>
+        <item>AP</item>
+        <item>AM</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MT</item>
+        <item>MS</item>
+        <item>MG</item>
+        <item>PA</item>
+        <item>PB</item>
+        <item>PR</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RS</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>SC</item>
+        <item>SP</item>
+        <item>SE</item>
+        <item>TO</item>
     </string-array>
 </resources>

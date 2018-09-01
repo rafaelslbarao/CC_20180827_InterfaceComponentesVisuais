@@ -1,6 +1,8 @@
 package br.com.datamob.interfaceecomponentesvisuais.data;
 
-public class Universidade
+import java.io.Serializable;
+
+public class Universidade implements Serializable
 {
     private Long codigo;
     private String nome;
@@ -69,5 +71,29 @@ public class Universidade
     public void setData(String data)
     {
         this.data = data;
+    }
+
+    @Override
+    public boolean equals(Object obj)
+    {
+        if (obj instanceof Universidade)
+        {
+            if (((Universidade) obj).getCodigo().equals(getCodigo()))
+                return true;
+            else
+                return false;
+        }
+        else
+            return false;
+    }
+
+    @Override
+    public String toString()
+    {
+        return
+                "Codigo " + codigo +
+                "\nNome  " + nome +
+                "\nCidade " + cidade +
+                "\nEstado " + estado;
     }
 }

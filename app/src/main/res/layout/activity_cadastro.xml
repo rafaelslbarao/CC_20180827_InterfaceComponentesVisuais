@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <LinearLayout
 
@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/Codigo"
                 android:inputType="number"
-                android:nextFocusDown="@id/etCidade"/>
+                android:nextFocusDown="@id/etNome" />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -39,7 +39,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/Nome"
-                android:inputType="text|textCapWords"/>
+                android:inputType="text|textCapWords"
+                android:nextFocusDown="@id/etCidade" />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -55,7 +56,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/Cidade"
-                android:inputType="text|textCapWords"/>
+                android:inputType="text|textCapWords"
+                android:nextFocusDown="@id/spEstado" />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -64,8 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:entries="@array/estado"
-            />
+            android:nextFocusDown="@id/etData" />
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -78,7 +79,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/DataInauguracao"
-                android:inputType="date"/>
+                android:inputType="date" />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -90,22 +91,29 @@
 
             >
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/btAdicionar"
-            android:text="@string/Adicionar"
-            />
+            <Button
+                android:id="@+id/btAdicionar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Adicionar"
+                android:visibility="gone" />
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:visibility="gone"
-            android:layout_height="wrap_content"
-            android:id="@+id/btAtualizar"
-            android:text="@string/Atualizar"
-            />
+            <Button
+                android:id="@+id/btAtualizar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Atualizar"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btRemover"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Remover"
+                android:visibility="gone" />
         </LinearLayout>
 
     </LinearLayout>
