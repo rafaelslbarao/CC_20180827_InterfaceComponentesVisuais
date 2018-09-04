@@ -219,9 +219,9 @@ public class CadastroActivity extends AppCompatActivity
         universidade.setNome(etNome.getText().toString());
         universidade.setData(etData.getText().toString());
         //
-        Intent intent = new Intent();
-        intent.putExtra(MainActivity.EXTRA_UNIVERSIDADE, universidade);
-        setResult(RESULT_OK, intent);
+        Intent intentRetorno = new Intent();
+        intentRetorno.putExtra(MainActivity.EXTRA_UNIVERSIDADE, universidade);
+        setResult(RESULT_OK, intentRetorno);
         finish();
     }
 

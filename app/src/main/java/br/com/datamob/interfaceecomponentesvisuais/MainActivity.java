@@ -41,15 +41,15 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+    protected void onActivityResult(int requestCode, int resultCode, Intent intentRetorno)
     {
-        super.onActivityResult(requestCode, resultCode, data);
+        super.onActivityResult(requestCode, resultCode, intentRetorno);
         switch (requestCode)
         {
             case REQUEST_CADASTRO:
                 if (resultCode == RESULT_OK)
                 {
-                    universidadeArrayList.add((Universidade) data.getSerializableExtra(EXTRA_UNIVERSIDADE));
+                    universidadeArrayList.add((Universidade) intentRetorno.getSerializableExtra(EXTRA_UNIVERSIDADE));
                     ((ArrayAdapter) lvUniversidades.getAdapter()).notifyDataSetChanged();
                 }
                 break;
@@ -57,13 +57,13 @@ public class MainActivity extends AppCompatActivity
                 switch (resultCode)
                 {
                     case CadastroActivity.RESULT_DELETED:
-                        universidadeArrayList.remove((Universidade) data.getSerializableExtra(EXTRA_UNIVERSIDADE));
+                        universidadeArrayList.remove((Universidade) intentRetorno.getSerializableExtra(EXTRA_UNIVERSIDADE));
                         ((ArrayAdapter) lvUniversidades.getAdapter()).notifyDataSetChanged();
                         break;
                     case CadastroActivity.RESULT_UPDATED:
-                        int index = universidadeArrayList.indexOf((Universidade) data.getSerializableExtra(EXTRA_UNIVERSIDADE));
+                        int index = universidadeArrayList.indexOf((Universidade) intentRetorno.getSerializableExtra(EXTRA_UNIVERSIDADE));
                         universidadeArrayList.remove(index);
-                        universidadeArrayList.add(index, (Universidade) data.getSerializableExtra(EXTRA_UNIVERSIDADE));
+                        universidadeArrayList.add(index, (Universidade) intentRetorno.getSerializableExtra(EXTRA_UNIVERSIDADE));
                         ((ArrayAdapter) lvUniversidades.getAdapter()).notifyDataSetChanged();
                         break;
                 }
